@@ -34,7 +34,7 @@ export default function Formulario() {
         setSubmitStatus(null)
 
         try {
-            const response = await axios.post('http://localhost:5000/api/respuestas', formData)
+            const response = await axios.post('https://9cd12d95b554.ngrok-free.app/api/respuestas', formData)
             
             console.log('Respuesta guardada:', response.data)
             setSubmitStatus('success')
